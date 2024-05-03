@@ -19,7 +19,7 @@ services:
       XDEBUG_CONFIG: ${XDEBUG_CONFIG:-client_host=host.docker.internal}
       PHP_IDE_CONFIG: "serverName=Backend"
     volumes:
-      - ./html:/var/www/html
+      - ./:/var/www/html
       - ./ssh:/var/www/.ssh
     container_name: test_sf_web
   database:
